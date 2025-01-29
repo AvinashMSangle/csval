@@ -1,11 +1,15 @@
 {
-  "name": "leadsyncapp",
+  "name": "cvalapp",
   "version": "1.0.0",
+  "description": "A cli tool to validate CSV file",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch main.js --env-file=.env --input=companies.csv --output=clean.csv --report=report.csv",
+    "start": "node --watch main.js --input=companies.csv --output=clean.csv --report=report.csv",
     "test": "vitest"
+  },
+  "bin": {
+    "csvalapp": "./main.js"
   },
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -114,8 +118,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
   "devDependencies": {
     "vitest": "^3.0.4"
   }
