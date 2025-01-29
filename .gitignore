@@ -1,3 +1,8 @@
+#Project Specific
+companies.csv
+error.csv
+report.csv
+
 # Logs
 logs
 *.log
